@@ -1,6 +1,4 @@
 const sumAll = function(a, b) {
-    if (a == b) return a; // not covered by tests
-
     if (typeof a != "number" || typeof b != "number") {
         return "ERROR";
     }
@@ -9,6 +7,9 @@ const sumAll = function(a, b) {
     if (a < 0 || b < 0) {
         return "ERROR";
     }
+
+    // not covered by tests
+    if (a == b) return a;
 
     // ensure a < b so that the following loop works
     if (b < a) {
